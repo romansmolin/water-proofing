@@ -259,6 +259,87 @@ button {
   z-index: -1;
 }
 
+.recommendations {
+  padding-top: 82px;
+}
+.recommendations__statistics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.recommendations__statistics__customers {
+  font-size: 40px;
+  font-weight: 600;
+  color: #04111E;
+}
+.recommendations__statistics__customers span {
+  color: #1866C2;
+  font-weight: 700;
+}
+.recommendations__statistics__reviews {
+  color: #04111E;
+  font-size: 24px;
+  font-weight: 400;
+}
+.recommendations__statistics__reviews span {
+  font-weight: 600;
+}
+.recommendations__reviews {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  margin-bottom: 101px;
+}
+.recommendations__reviews .review {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.recommendations__reviews .review__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: #04111E;
+}
+.recommendations__reviews .review__date {
+  font-weight: 600;
+  font-style: italic;
+  color: #04111E;
+}
+.recommendations__form {
+  height: 312px;
+  text-align: center;
+  background: #FFF;
+  box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.05);
+  padding: 50px 110px;
+}
+.recommendations__form__subtitle {
+  color: #04111E;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-bottom: 13px;
+}
+.recommendations__form__header {
+  font-size: 32px;
+  font-weight: 600;
+  color: #04111E;
+  margin-bottom: 51px;
+}
+.recommendations__form__input {
+  display: flex;
+  gap: 18px;
+}
+.recommendations__form__input .form-input {
+  flex: 1;
+  height: 60px;
+}
+.recommendations__form__input .submit {
+  flex: 1;
+  height: 60px;
+}
+
 @media (max-width: 991.98px) {
   .container {
     width: 100%;
@@ -369,6 +450,39 @@ button {
     display: none;
   }
 }
+.recommendations {
+  padding-top: 39px;
+}
+.recommendations__statistics {
+  flex-direction: column;
+  align-items: unset;
+  margin-bottom: 27px;
+}
+.recommendations__statistics__customers {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.recommendations__statistics__reviews {
+  font-size: 16px;
+}
+.recommendations__reviews {
+  flex-direction: column;
+  gap: 27px;
+  margin-bottom: 47px;
+}
+.recommendations__reviews .review__text {
+  width: 355px;
+  font-size: 14px;
+}
+.recommendations__reviews .review__date {
+  font-size: 14px;
+}
+.recommendations__form {
+  width: calc(100% + 32px);
+  margin: 0px 16px 0px -16px;
+  padding: 30px 17px;
+}
+
 @media (max-width: 991.98px) {
   .container {
     padding: 0px 16px;

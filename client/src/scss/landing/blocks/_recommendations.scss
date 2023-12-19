@@ -1,0 +1,95 @@
+.recommendations {
+    padding-top: 82px;
+
+    &__statistics {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+
+        &__customers {
+            font-size: 40px;
+            font-weight: $font-weight-semibold;
+            color: $text-color;
+
+            span {
+                color: $secondary-color;
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        &__reviews {
+            color: $text-color;
+            font-size: $font-size-extra-large;
+            font-weight: $font-weight-regular;
+
+            span {
+                font-weight: $font-weight-semibold;
+            }
+        }
+    }
+
+    &__reviews {
+        display: flex;
+        justify-content: space-between;
+        gap: 13px;
+        margin-bottom: 101px;
+
+        .review {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &__text {
+                font-size: $font-size-medium;
+                font-weight: $font-weight-regular;
+                line-height: 22.4px;
+                color: $text-color;
+            }
+
+            &__date {
+                font-weight: $font-weight-semibold;
+                font-style: italic;
+                color: $text-color;
+            }
+        }
+    }
+
+    &__form {
+        height: 312px;
+        text-align: center;
+        background: #FFF;
+        box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.05);
+        padding: 50px 110px;
+
+        &__subtitle {
+           color: $text-color;
+            font-size: $font-size-medium;
+            font-weight: $font-weight-regular;
+            opacity: $text-opacity;
+            margin-bottom: 13px;
+        }
+
+        &__header {
+            font-size: 32px;
+            font-weight: $font-weight-semibold;
+            color: $text-color;
+            margin-bottom: 51px;
+        }
+
+        &__input {
+            display: flex;
+            gap: 18px;
+
+            .form-input {
+                flex: 1;
+                height: 60px;
+            }
+
+            .submit {
+                flex: 1;
+                height: 60px;
+            }
+        }
+    }
+}
