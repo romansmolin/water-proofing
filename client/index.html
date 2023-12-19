@@ -3,19 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Water-proofing</title>
 </head>
 <body>
+    <div class="preheader">
+        <div class="container">
+            <p class="preheader__text">
+                We accept advertising compensation from the brands on this website, which may impact the order and scores of the brands. We do not necessarily feature all providers in your area.
+                <!-- <span class="close-icon"><img src="src/icons/close.svg" alt="Close"></span> -->
+            </p>
+        </div>
+    </div>
+
     <header class="header">
         <div class="container">
-
+            <div class="header__logo">
+                <div class="image">
+                    <img src="src/img/logo.svg" alt="Water Proofing USA">
+                </div>
+                <div class="name">Water Proofing USA</div>
+            </div>
         </div>
     </header>
 
     <main class="main">
         <div class="container">
-            <section class="hero-secton">
+            <section class="hero-section">
 
+                <div class="hero-section__offer">
+                    <p class="hero-section__offer__subtitle">High Quality, Affordable</p>
+                    <h1 class="hero-section__offer__heading">Basement Waterproofing in Riverside</h1>
+                    <p class="hero-section__offer__text">In need of basement waterproofing in Riverside? Our network of trusted basement waterproofing specialists are ready to help.</p>
+
+                    <img 
+                        src="src/img/plumber.svg" 
+                        alt="Plumber" 
+                        class="plumber-img mobile"
+                    >
+                </div>
+
+                <div class="hero-section__form">
+                    <h2 class="hero-section__form__heading">Free Basement Waterproofing Quote</h2>
+                    <p class="hero-section__form__subtitle">Enter your Zip Code for a free estimate!</p>
+                    <div class="input-wrapper">
+                        <h3>Zip Code</h3>
+                        <input
+                            class="form-input" 
+                            type="number"
+                            id="dzip"
+                            placeholder="Enter Your Zip Code"
+                        >
+                        <div class="inpput-con dzip"></div>
+                        <span class="form-input__error"></span>
+                    </div>
+                    <button
+                        type="button" 
+                        class="submit"
+                    >
+                        Get Estimates
+                    </button>
+                    <div class="hero-section__form__footer-text">
+                        get a quote in just under 2 minutes
+                    </div>
+                </div>
+
+                <div class="hero-section__services">
+                    <div class="hero-section__services__item">
+                        <img 
+                            src="src/icons/residential.svg" 
+                            alt="Residential and Commercial">
+                        <span>
+                            Residential and Commercial
+                        </span>
+                    </div>
+                    <div class="hero-section__services__item">
+                        <img 
+                            src="src/icons/response.svg" 
+                            alt="Fast Response Time">
+                        <span>
+                            Fast Response Time
+                        </span>
+                    </div>
+                    <div class="hero-section__services__item">
+                        <img 
+                            src="src/icons/rating.svg" 
+                            alt="High Customer Satisfaction">
+                        <span>
+                            High Customer Satisfaction
+                        </span>
+                    </div>
+                    <div class="hero-section__services__item">
+                        <img 
+                            src="src/icons/service.svg" 
+                            alt="Professional Service">
+                        <span>
+                            Professional Service
+                        </span>
+                    </div>
+                </div>
+
+                <img 
+                    src="src/img/plumber.svg" 
+                    alt="Plumber" 
+                    class="plumber-img"
+                >
             </section>
     
             <section class="recommendations">
@@ -34,8 +126,10 @@
 
     <footer class="footer">
         <div class="container">
-            
+
         </div>
     </footer>
+
+    <script src="src/js/ui.js"></script>
 </body>
 </html>

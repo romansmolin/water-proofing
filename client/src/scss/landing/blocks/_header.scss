@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+    padding-top: 38px;
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        width: 313px;
+        align-items: baseline;
+
+        .name {
+            font-size: $font-size-extra-large;
+            font-weight: $font-weight-bold;
+            color: $text-color;
+        }
+    }
+}

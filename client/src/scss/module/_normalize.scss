@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: $main-font;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: $main-font;
+}
+
+.container {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        margin-bottom: 15px;
+        font-size: $font-size-medium;
+        font-weight: $font-weight-semibold;
+        opacity: 0.5;
+        color: $text-color;
+    }
+
+    .input-icon {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 46%;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.form-input {
+    width: 100%;
+    border: 0.1px solid #afc1c9;
+    height: 50px;
+    padding-left: 16px;
+    font-size: $font-size-large;
+    font-family: $main-font;
+    font-weight: $font-weight-medium;
+    color: $text-color;
+    border-radius: 4px;
+
+    &__error {
+        text-align: right;
+        color: $error-color;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-medium;
+        height: 15px;
+    }
+
+
+    &::placeholder {
+        opacity: $text-opacity;
+        font-size: $font-size-medium;
+        font-weight: $font-weight-bold;
+        color: $text-color;
+    }
+
+    &:focus-visible {
+        border: 1px solid #5e696e;
+        outline: 0;
+    }
+
+}
+
+.submit {
+    background-color: $primary-color;
+    border: none;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+    font-family: $main-font;
+    color: #ffffff;
+    height: 52px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color $transition-delay;
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+
+    img {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity $transition-delay, right $transition-delay;
+
+    }
+
+    @media (min-width: 992px) {
+        &:hover {
+            background-color: $primary-color-hover;
+
+            img {
+                opacity: 1;
+                right: 15px;
+            }
+        }
+    }
+}

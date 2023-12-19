@@ -1,0 +1,96 @@
+@media (max-width: 991.98px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        padding: unset;
+        padding-top: 50px;
+        position: unset;
+        overflow: unset;
+    
+        &__offer {
+            width: unset;
+            position: relative;
+    
+            &__subtitle {
+                font-size: 12px;
+            }
+    
+            &__heading {
+                font-size: 36px;
+                margin-top: 9px;
+                margin-bottom: 9px;
+                width: 75%;
+            }
+    
+            &__text {
+                font-size: 14px;
+                margin-bottom: 15px;
+                width: 75%;
+            }
+
+            .plumber-img.mobile {
+                display: block;
+                right: -72px;
+                height: 100%;
+                opacity: 0.5;
+                z-index: unset;
+            }
+        }
+    
+        &__form {
+            height: unset;
+            width: unset;
+            position: unset;
+            transform: none;
+            padding: 39px 0px;
+    
+            &__heading {
+                font-size: $font-size-heading-2-sm;
+                margin-bottom: 8px;
+            }
+    
+            &__subtitle {
+                font-size: $font-size-small;
+                margin-bottom: 17px;
+            }
+    
+            .input-wrapper {
+                h3 {
+                    font-size: $font-size-small;
+                }
+            }
+    
+            .submit {
+                font-size: $font-size-medium;
+            }
+    
+            &__footer-text {
+                font-size: $font-size-small;
+            }
+        }
+    
+        &__services {
+            width: 300px;
+            flex-wrap: wrap;
+            margin: 29px auto 0 auto;
+            justify-content: space-between;
+    
+            &__item {
+                align-items: center;
+                gap: 30px;
+    
+                span {
+                    text-align: center;
+                }
+            }
+        }
+    
+        .plumber-img {
+            display: none;
+        }
+    
+        &::before {
+            display: none;
+        }
+    }
+}
