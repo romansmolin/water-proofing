@@ -702,6 +702,7 @@ button {
 @media (max-width: 991.98px) {
   .faq-section {
     padding-top: 20px;
+    padding-bottom: 20px;
     flex-direction: column;
     gap: 30px;
   }
@@ -740,6 +741,9 @@ button {
   }
   .faq-section__accardion__tab__content {
     font-size: 14px;
+    width: unset;
+    padding-left: 0;
+    line-height: 19.2px;
   }
 }
 @media (max-width: 991.98px) {
