@@ -432,7 +432,7 @@ button {
   content: url("../icons/chevron.svg");
   text-align: center;
   transform: rotate(180deg);
-  transition: all 0.35s;
+  transition: all 0.3s;
   box-sizing: border-box;
   width: 10px;
   height: 10px;
@@ -440,7 +440,7 @@ button {
 .faq-section__accardion__tab__content {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.35s;
+  transition: max-height 0.3s ease-in-out;
   padding: 0px 0px 0px 21px;
   line-height: 25.6px;
   font-size: 16px;
