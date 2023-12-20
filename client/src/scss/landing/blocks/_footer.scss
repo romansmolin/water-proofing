@@ -1,0 +1,76 @@
+.footer {
+    background: rgba(236, 240, 241, 0.30);
+    padding: 38px 0px 21px 0px;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        width: 313px;
+        align-items: baseline;
+
+        .name {
+            font-size: $font-size-extra-large;
+            font-weight: $font-weight-bold;
+            color: $text-color;
+        }
+    }
+
+    &__middle-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 43px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+        p {
+            font-size: $font-size-small;
+            width: 412px;
+            opacity: $text-opacity;
+        }
+
+        &__companies {
+            display: flex;
+            gap: 50px;
+        }
+
+    }
+
+    &__copyright-section {
+        display: flex;
+        justify-content: space-between;
+
+        .copyright {
+            font-size: 16px;
+            font-weight: $font-weight-regular;
+            opacity: $text-opacity;
+            color: $text-color;
+        }
+
+        .links {
+            display: flex;
+            gap: 40px;
+
+            a {
+                color: $text-color;
+                opacity: $text-opacity;
+            }
+        }
+
+        .social-links {
+            display: flex;
+            gap: 32px;
+
+            a {
+                img {
+                    opacity: $text-opacity;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.faq-section {
+    padding-top: 140px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 68px;
+
+    &__contact-us {
+        width: 470px;
+        flex: 1;
+
+        h3 {
+            color: $secondary-color;
+            font-size: 20px;
+            font-weight: $font-weight-semibold;
+            margin-bottom: 8px;
+        }
+
+        &__wrapper {
+            .heading {
+                font-weight: $font-weight-semibold;
+                font-size: 40px;
+                color: $text-color;
+                line-height: 56px;
+                margin-bottom: 28px;
+            }
+    
+            .submit {
+                margin-bottom: 30px;
+            }
+        }
+
+        p {
+            font-weight: $font-weight-regular;
+            font-size: $font-size-medium;
+            line-height: 25.6px;
+            opacity: $text-opacity;
+            color: $text-color;
+        }
+    }
+
+    &__accardion {
+        flex: 2;
+        overflow: hidden;
+
+        &__tab {
+
+            input[type="checkbox"] {
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+
+                &:checked + label + .faq-section__accardion__tab__content {
+                    max-height: 10rem;
+                    padding-bottom: 43px;
+                }
+
+                &:checked + .faq-section__accardion__tab__label::after {
+                    transform: rotate(360deg);
+                }
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #D7E2E4;
+            }
+
+
+            &__label {
+                display: flex;
+                color: $text-color;
+                font-size: $font-size-extra-large;
+                font-weight: $font-weight-semibold;
+                cursor: pointer;
+                justify-content: space-between;
+                align-items: center;
+                padding: 21px;
+
+                &::after {
+                    content: url('../icons/chevron.svg');
+                    text-align: center;
+                    transform: rotate(180deg);
+                    transition: all 0.35s;
+                    box-sizing: border-box;
+                    width: 10px;
+                    height: 10px;
+                }
+
+            }
+
+            &__content {
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.35s;
+                padding: 0px 0px 0px 21px;
+                line-height: 25.6px;
+                font-size: $font-size-medium;
+                font-weight: $font-weight-regular;
+                color: $text-color;
+                width: 701px;
+            }
+        }
+    }
+}

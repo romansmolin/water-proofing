@@ -2,11 +2,17 @@
 @import 'blocks/header';
 @import 'blocks/hero-section';
 @import 'blocks/recommendations'; 
+@import 'blocks/about-us';
+@import 'blocks/faq-section';
+@import 'blocks/footer';
 
 @import 'mediaqueries/preheader';
 @import 'mediaqueries/header';
 @import 'mediaqueries/hero-section';
 @import 'mediaqueries/recommendations';
+@import 'mediaqueries/about-us';
+@import 'mediaqueries/faq-section';
+@import 'mediaqueries/footer';
 
 
 @media (max-width: 991.98px) {

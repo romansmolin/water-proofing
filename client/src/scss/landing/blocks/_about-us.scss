@@ -1,0 +1,36 @@
+.about-us {
+    padding-top: 63px;
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+
+    &__upper-section {
+        display: flex;
+        gap: 77px;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h2 {
+                color: $text-color;
+                font-size: 40px;
+                font-weight: $font-weight-semibold;
+            }
+
+            p {
+                color: $text-color;
+                font-weight: $font-weight-regular;
+                font-size: $font-size-medium;
+            }
+
+            
+        }
+    }
+
+    &__lower-section {
+        display: flex;
+        justify-content: space-between;
+    }
+}

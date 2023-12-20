@@ -1,0 +1,69 @@
+@media (max-width: 991.98px) {
+    .footer {
+        padding-top: 36px;
+
+        .container {
+            gap: 24px;
+        }
+
+        &__logo {
+            justify-content: unset;
+            width: unset;
+            gap: 9px;
+
+            .image {
+                height: 25px;
+                width: 45px;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+    
+            .name {
+                font-size: 18px;
+            }
+        }
+
+        &__middle-section {
+            flex-direction: column;
+
+            p {
+                width: unset;
+                font-size: 14px;
+                margin-bottom: 27px;
+            }
+
+            &__companies {
+                justify-content: space-between;
+                width: 100%;
+                gap: unset;
+
+                img {
+                    
+                    &:not(:first-child) {
+                        width: 60px;
+                    }
+                }
+            }
+        }
+
+        &__copyright-section {
+            flex-direction: column;
+            gap: 16px;
+            justify-content: unset;
+
+            .copyright {
+                font-size: 14px;
+            }
+
+            .links {
+                font-size: 14px;
+                gap: unset;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    }
+}

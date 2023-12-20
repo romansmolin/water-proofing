@@ -331,13 +331,184 @@ button {
   display: flex;
   gap: 18px;
 }
-.recommendations__form__input .form-input {
+.recommendations__form__input .form-input, .recommendations__form__input .submit {
   flex: 1;
   height: 60px;
 }
-.recommendations__form__input .submit {
+
+.about-us {
+  padding-top: 63px;
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+}
+.about-us__upper-section {
+  display: flex;
+  gap: 77px;
+}
+.about-us__upper-section__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about-us__upper-section__text h2 {
+  color: #04111E;
+  font-size: 40px;
+  font-weight: 600;
+}
+.about-us__upper-section__text p {
+  color: #04111E;
+  font-weight: 400;
+  font-size: 16px;
+}
+.about-us__lower-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-section {
+  padding-top: 140px;
+  padding-bottom: 50px;
+  display: flex;
+  gap: 68px;
+}
+.faq-section__contact-us {
+  width: 470px;
   flex: 1;
-  height: 60px;
+}
+.faq-section__contact-us h3 {
+  color: #1866C2;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.faq-section__contact-us__wrapper .heading {
+  font-weight: 600;
+  font-size: 40px;
+  color: #04111E;
+  line-height: 56px;
+  margin-bottom: 28px;
+}
+.faq-section__contact-us__wrapper .submit {
+  margin-bottom: 30px;
+}
+.faq-section__contact-us p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  opacity: 0.5;
+  color: #04111E;
+}
+.faq-section__accardion {
+  flex: 2;
+  overflow: hidden;
+}
+.faq-section__accardion__tab input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.faq-section__accardion__tab input[type=checkbox]:checked + label + .faq-section__accardion__tab__content {
+  max-height: 10rem;
+  padding-bottom: 43px;
+}
+.faq-section__accardion__tab input[type=checkbox]:checked + .faq-section__accardion__tab__label::after {
+  transform: rotate(360deg);
+}
+.faq-section__accardion__tab:not(:last-child) {
+  border-bottom: 1px solid #D7E2E4;
+}
+.faq-section__accardion__tab__label {
+  display: flex;
+  color: #04111E;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px;
+}
+.faq-section__accardion__tab__label::after {
+  content: url("../icons/chevron.svg");
+  text-align: center;
+  transform: rotate(180deg);
+  transition: all 0.35s;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+}
+.faq-section__accardion__tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+  padding: 0px 0px 0px 21px;
+  line-height: 25.6px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #04111E;
+  width: 701px;
+}
+
+.footer {
+  background: rgba(236, 240, 241, 0.3);
+  padding: 38px 0px 21px 0px;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 313px;
+  align-items: baseline;
+}
+.footer__logo .name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #04111E;
+}
+.footer__middle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 43px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footer__middle-section p {
+  font-size: 14px;
+  width: 412px;
+  opacity: 0.5;
+}
+.footer__middle-section__companies {
+  display: flex;
+  gap: 50px;
+}
+.footer__copyright-section {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__copyright-section .copyright {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+  color: #04111E;
+}
+.footer__copyright-section .links {
+  display: flex;
+  gap: 40px;
+}
+.footer__copyright-section .links a {
+  color: #04111E;
+  opacity: 0.5;
+}
+.footer__copyright-section .social-links {
+  display: flex;
+  gap: 32px;
+}
+.footer__copyright-section .social-links a img {
+  opacity: 0.5;
 }
 
 @media (max-width: 991.98px) {
@@ -450,39 +621,178 @@ button {
     display: none;
   }
 }
-.recommendations {
-  padding-top: 39px;
+@media (max-width: 991.98px) {
+  .recommendations {
+    padding-top: 39px;
+  }
+  .recommendations__statistics {
+    flex-direction: column;
+    align-items: unset;
+    margin-bottom: 27px;
+  }
+  .recommendations__statistics__customers {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .recommendations__statistics__reviews {
+    font-size: 16px;
+  }
+  .recommendations__reviews {
+    flex-direction: column;
+    gap: 27px;
+    margin-bottom: 47px;
+  }
+  .recommendations__reviews .review__text {
+    width: 355px;
+    font-size: 14px;
+  }
+  .recommendations__reviews .review__date {
+    font-size: 14px;
+  }
+  .recommendations__form {
+    width: calc(100% + 32px);
+    margin: 0px 16px 0px -16px;
+    padding: 30px 17px;
+    height: unset;
+  }
+  .recommendations__form__subtitle {
+    font-size: 14px;
+  }
+  .recommendations__form__header {
+    font-size: 20px;
+  }
+  .recommendations__form__input {
+    flex-direction: column;
+  }
+  .recommendations__form__input .form-input, .recommendations__form__input .submit {
+    flex: unset;
+    height: 54px;
+  }
+  .recommendations__form__input .submit {
+    font-size: 16px;
+  }
 }
-.recommendations__statistics {
-  flex-direction: column;
-  align-items: unset;
-  margin-bottom: 27px;
+@media (max-width: 991.98px) {
+  .about-us {
+    padding-top: 66px;
+    gap: 29px;
+  }
+  .about-us__upper-section__text h2 {
+    font-size: 20px;
+  }
+  .about-us__upper-section__text p {
+    font-size: 14px;
+  }
+  .about-us__upper-section__photo {
+    display: none;
+  }
+  .about-us__lower-section {
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+  .about-us__lower-section__item {
+    width: 168px;
+    height: 168px;
+  }
+  .about-us__lower-section__item img {
+    width: 100%;
+    height: 100%;
+  }
 }
-.recommendations__statistics__customers {
-  font-size: 20px;
-  margin-bottom: 6px;
+@media (max-width: 991.98px) {
+  .faq-section {
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .faq-section__contact-us {
+    width: unset;
+  }
+  .faq-section__contact-us h3 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .faq-section__contact-us__wrapper {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .faq-section__contact-us__wrapper .heading {
+    font-size: 18px;
+    width: 217px;
+    line-height: 25.2px;
+    margin-bottom: unset;
+  }
+  .faq-section__contact-us__wrapper .submit {
+    width: 120px;
+    font-size: 14px;
+    margin-bottom: unset;
+  }
+  .faq-section__contact-us p {
+    font-size: 14px;
+  }
+  .faq-section__accardion__tab__label {
+    font-size: 14px;
+    padding: 16px 0px;
+    line-height: 19.6px;
+  }
 }
-.recommendations__statistics__reviews {
-  font-size: 16px;
+@media (max-width: 991.98px) {
+  .footer {
+    padding-top: 36px;
+  }
+  .footer .container {
+    gap: 24px;
+  }
+  .footer__logo {
+    justify-content: unset;
+    width: unset;
+    gap: 9px;
+  }
+  .footer__logo .image {
+    height: 25px;
+    width: 45px;
+  }
+  .footer__logo .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer__logo .name {
+    font-size: 18px;
+  }
+  .footer__middle-section {
+    flex-direction: column;
+  }
+  .footer__middle-section p {
+    width: unset;
+    font-size: 14px;
+    margin-bottom: 27px;
+  }
+  .footer__middle-section__companies {
+    justify-content: space-between;
+    width: 100%;
+    gap: unset;
+  }
+  .footer__middle-section__companies img:not(:first-child) {
+    width: 60px;
+  }
+  .footer__copyright-section {
+    flex-direction: column;
+    gap: 16px;
+    justify-content: unset;
+  }
+  .footer__copyright-section .copyright {
+    font-size: 14px;
+  }
+  .footer__copyright-section .links {
+    font-size: 14px;
+    gap: unset;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
-.recommendations__reviews {
-  flex-direction: column;
-  gap: 27px;
-  margin-bottom: 47px;
-}
-.recommendations__reviews .review__text {
-  width: 355px;
-  font-size: 14px;
-}
-.recommendations__reviews .review__date {
-  font-size: 14px;
-}
-.recommendations__form {
-  width: calc(100% + 32px);
-  margin: 0px 16px 0px -16px;
-  padding: 30px 17px;
-}
-
 @media (max-width: 991.98px) {
   .container {
     padding: 0px 16px;
