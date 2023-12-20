@@ -46,6 +46,10 @@
                     padding: 16px 0px;
                     line-height: 19.6px;
                 }
+
+                &__content {
+                    font-size: $font-size-small;
+                }
             }
         }
     }

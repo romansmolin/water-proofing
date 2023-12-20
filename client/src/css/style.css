@@ -738,6 +738,9 @@ button {
     padding: 16px 0px;
     line-height: 19.6px;
   }
+  .faq-section__accardion__tab__content {
+    font-size: 14px;
+  }
 }
 @media (max-width: 991.98px) {
   .footer {
