@@ -451,6 +451,7 @@ button {
   transform: rotate(90deg);
   transition: all 0.35s;
   font-size: 12px;
+  width: 15px;
 }
 .faq-section__accardion__tab__content {
   max-height: 0px;
@@ -860,7 +861,7 @@ button {
   .faq-section__contact-us__wrapper .heading-wrapper .heading {
     width: unset;
   }
-  .faq-section__contact-us__wrapper .heading-wrapper .text {
+  .faq-section__contact-us__wrapper .heading-wrapper .tablet.text {
     display: block;
   }
   .faq-section__contact-us__wrapper .submit {
