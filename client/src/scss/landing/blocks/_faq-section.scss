@@ -50,8 +50,9 @@
                 z-index: -1;
 
                 &:checked + label + .faq-section__accardion__tab__content {
-                    max-height: 10rem;
-                    padding-bottom: 43px;
+                    max-height: 500px;
+                    height: auto;
+                    
                 }
 
                 &:checked + .faq-section__accardion__tab__label::after {
@@ -73,23 +74,27 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 21px;
+                position: relative;
 
                 &::after {
                     content: url('../icons/chevron.svg');
                     text-align: center;
-                    transform: rotate(180deg);
+                    transform: rotate(180deg) translateY(50%);
                     transition: rotate 0.3s;
                     box-sizing: border-box;
-                    width: 10px;
-                    height: 10px;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    // transform: translateY(-50%);
                 }
 
             }
 
             &__content {
-                max-height: 0;
+                max-height: 0px;
+                height: 0px;
                 overflow: hidden;
-                transition: max-height 0.3s ease-in-out;;
+                transition: max-height 0.3s ease-in-out;
                 padding: 0px 0px 0px 21px;
                 line-height: 25.6px;
                 font-size: $font-size-medium;

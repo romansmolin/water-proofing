@@ -94,3 +94,14 @@
         }
     }
 }
+
+@media (min-width: 820px) and (max-width:991.98px) {
+    .hero-section {
+        &__services {
+            width: unset;
+            flex-wrap: nowrap;
+            margin: 29px auto;
+            gap: 60px;
+        }
+    }
+}

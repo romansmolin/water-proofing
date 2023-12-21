@@ -58,3 +58,22 @@
         }
     }
 }
+
+@media (min-width: 820px) and (max-width:991.98px) {
+    .faq-section {
+        &__contact-us {
+            &__wrapper {
+                margin-bottom: 20px;
+                align-items: center;
+                
+                .heading {
+                    flex: 1;
+                }
+
+                .submit {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

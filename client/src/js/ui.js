@@ -7,12 +7,16 @@ const preheaderIcon = document.querySelector('.preheader__text .close-icon');
 //         preheader.remove();
 //     }
 // })
+const faqSectionLabels = document.querySelectorAll('.faq-section__accardion__tab__label');
 
-const labels = document.querySelectorAll('.faq-section__accardion__tab__label');
+// faqSectionLabels.forEach(label => {
+//     label.addEventListener('click', () => {
+//         const content = label.nextElementSibling;
+//         const paragraph = content.querySelector('p');
 
-// labels.forEach(label => {
-//     label.addEventListener('click', (e) => {
-//         const forAttribute = label.getAttribute('for');
-//         console.log('for attribute:', forAttribute);
-//     });
-// });
+//         if (paragraph) {
+//             const paragraphHeight = paragraph.offsetHeight; // Get the height of the <p> element
+//             content.style.height = paragraphHeight + 'px'
+//         }
+//     })
+// })

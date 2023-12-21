@@ -63,3 +63,21 @@
         }
     }
 }
+
+@media (min-width: 820px) and (max-width:991.98px) {
+    .recommendations {
+        &__statistics {
+            align-items: center;
+            flex-direction: row;
+
+            &__customers {
+                margin-bottom: unset;
+            }
+        }
+
+        &__reviews {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

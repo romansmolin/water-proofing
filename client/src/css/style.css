@@ -118,7 +118,6 @@ button {
 }
 
 .preheader {
-  height: 43px;
   width: 100%;
   background-color: #ECF0F1;
   padding: 13px 0px;
@@ -409,8 +408,8 @@ button {
   z-index: -1;
 }
 .faq-section__accardion__tab input[type=checkbox]:checked + label + .faq-section__accardion__tab__content {
-  max-height: 10rem;
-  padding-bottom: 43px;
+  max-height: 500px;
+  height: auto;
 }
 .faq-section__accardion__tab input[type=checkbox]:checked + .faq-section__accardion__tab__label::after {
   transform: rotate(360deg);
@@ -427,18 +426,21 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 21px;
+  position: relative;
 }
 .faq-section__accardion__tab__label::after {
   content: url("../icons/chevron.svg");
   text-align: center;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(50%);
   transition: rotate 0.3s;
   box-sizing: border-box;
-  width: 10px;
-  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
 }
 .faq-section__accardion__tab__content {
-  max-height: 0;
+  max-height: 0px;
+  height: 0px;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
   padding: 0px 0px 0px 21px;
@@ -514,9 +516,6 @@ button {
 @media (max-width: 991.98px) {
   .container {
     width: 100%;
-  }
-  .preheader {
-    height: 65px;
   }
   .preheader__text {
     font-size: 10px;
@@ -621,6 +620,14 @@ button {
     display: none;
   }
 }
+@media (min-width: 820px) and (max-width: 991.98px) {
+  .hero-section__services {
+    width: unset;
+    flex-wrap: nowrap;
+    margin: 29px auto;
+    gap: 60px;
+  }
+}
 @media (max-width: 991.98px) {
   .recommendations {
     padding-top: 39px;
@@ -670,6 +677,19 @@ button {
   }
   .recommendations__form__input .submit {
     font-size: 16px;
+  }
+}
+@media (min-width: 820px) and (max-width: 991.98px) {
+  .recommendations__statistics {
+    align-items: center;
+    flex-direction: row;
+  }
+  .recommendations__statistics__customers {
+    margin-bottom: unset;
+  }
+  .recommendations__reviews {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 991.98px) {
@@ -744,6 +764,18 @@ button {
     width: unset;
     padding-left: 0;
     line-height: 19.2px;
+  }
+}
+@media (min-width: 820px) and (max-width: 991.98px) {
+  .faq-section__contact-us__wrapper {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .faq-section__contact-us__wrapper .heading {
+    flex: 1;
+  }
+  .faq-section__contact-us__wrapper .submit {
+    flex: 1;
   }
 }
 @media (max-width: 991.98px) {
