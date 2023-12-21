@@ -6,6 +6,9 @@
         padding-top: 50px;
         position: unset;
         overflow: unset;
+
+        padding-bottom: 56px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     
         &__offer {
             width: unset;
@@ -95,13 +98,54 @@
     }
 }
 
-@media (min-width: 820px) and (max-width:991.98px) {
+// @media (min-width: 620px) and (max-width:991.98px) {
+//     .hero-section {
+//         &__services {
+//             width: unset;
+//             flex-wrap: nowrap;
+//             margin: 29px auto;
+//             gap: 60px;
+//         }
+//     }
+// }
+
+@media (min-width: 720px) and (max-width: 991.98px) {
     .hero-section {
+        position: relative;
+        padding-top: unset;
+
+        &__offer {
+            margin-top: 49px;
+
+            &__heading {
+                width: 50%;
+                font-size: 46px;
+            }
+
+            &__text {
+                width: 50%;
+                margin-top: 16px;
+            }
+
+            .plumber-img.mobile {
+                display: none;
+            }
+        }
+
+        &__form {
+            position: absolute;
+            top: 23px;
+            width: 318px;
+            height: 342px;
+            transform: none;
+            padding: 24px 20px 
+        }
+
         &__services {
-            width: unset;
+            width: 100%;
+            margin-top: 66px;
             flex-wrap: nowrap;
-            margin: 29px auto;
-            gap: 60px;
+            justify-content: space-between;
         }
     }
 }

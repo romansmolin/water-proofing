@@ -14,13 +14,13 @@
             .image {
                 height: 25px;
                 width: 45px;
-    
+
                 img {
                     width: 100%;
                     height: 100%;
                 }
             }
-    
+
             .name {
                 font-size: 18px;
             }
@@ -41,7 +41,7 @@
                 gap: unset;
 
                 img {
-                    
+
                     &:not(:first-child) {
                         width: 60px;
                     }
@@ -54,15 +54,40 @@
             gap: 16px;
             justify-content: unset;
 
-            .copyright {
-                font-size: 14px;
-            }
+            .copyright-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
 
-            .links {
-                font-size: 14px;
-                gap: unset;
-                width: 100%;
-                justify-content: space-between;
+                .copyright {
+                    font-size: 14px;
+                }
+
+                .links {
+                    font-size: 14px;
+                    gap: unset;
+                    width: 100%;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) and (max-width: 991.98px) {
+    .footer {
+        &__copyright-section {
+            justify-content: space-between;
+            flex-direction: row;
+
+            .copyright-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+
+                .links {
+                    gap: 24px;
+                }
             }
         }
     }

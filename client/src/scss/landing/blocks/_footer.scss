@@ -45,20 +45,25 @@
         display: flex;
         justify-content: space-between;
 
-        .copyright {
-            font-size: 16px;
-            font-weight: $font-weight-regular;
-            opacity: $text-opacity;
-            color: $text-color;
-        }
-
-        .links {
+        .copyright-wrapper {
             display: flex;
             gap: 40px;
-
-            a {
-                color: $text-color;
+            
+            .copyright {
+                font-size: 16px;
+                font-weight: $font-weight-regular;
                 opacity: $text-opacity;
+                color: $text-color;
+            }
+    
+            .links {
+                display: flex;
+                gap: 40px;
+    
+                a {
+                    color: $text-color;
+                    opacity: $text-opacity;
+                }
             }
         }
 
@@ -66,9 +71,12 @@
             display: flex;
             gap: 32px;
 
+
+
             a {
                 img {
-                    opacity: $text-opacity;
+                    opacity: 0.2;
+                    
                 }
             }
         }

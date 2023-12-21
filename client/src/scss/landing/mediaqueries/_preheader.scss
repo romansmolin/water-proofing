@@ -5,9 +5,15 @@
 
     .preheader {
         // height: 65px;
-    
+
         &__text {
             font-size: 10px;
         }
+    }
+}
+
+@media (min-width: 720px) and (max-width: 991.98px) {
+    .preheader {
+        display: none;
     }
 }

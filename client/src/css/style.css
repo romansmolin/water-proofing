@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -100,12 +101,7 @@ button {
   border-radius: 4px;
 }
 .submit img {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: opacity 0.3s, right 0.3s;
+  margin-left: 6px;
 }
 @media (min-width: 992px) {
   .submit:hover {
@@ -246,6 +242,7 @@ button {
   top: 0;
   z-index: -1;
   right: 135px;
+  opacity: 0.5;
 }
 .hero-section::before {
   content: "";
@@ -349,6 +346,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  flex: 1;
 }
 .about-us__upper-section__text h2 {
   color: #04111E;
@@ -360,9 +358,25 @@ button {
   font-weight: 400;
   font-size: 16px;
 }
+.about-us__upper-section__photo {
+  flex: 1;
+}
+.about-us__upper-section__photo img {
+  opacity: 0.5;
+  max-width: 100%;
+  height: 100%;
+}
 .about-us__lower-section {
   display: flex;
   justify-content: space-between;
+}
+.about-us__lower-section__item {
+  flex: 1;
+  margin: 0 10px;
+}
+.about-us__lower-section__item img {
+  max-width: 100%;
+  height: auto;
 }
 
 .faq-section {
@@ -383,10 +397,12 @@ button {
 }
 .faq-section__contact-us__wrapper .heading {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 28px;
   color: #04111E;
-  line-height: 56px;
   margin-bottom: 28px;
+}
+.faq-section__contact-us__wrapper .text.tablet {
+  display: none;
 }
 .faq-section__contact-us__wrapper .submit {
   margin-bottom: 30px;
@@ -409,10 +425,11 @@ button {
 }
 .faq-section__accardion__tab input[type=checkbox]:checked + label + .faq-section__accardion__tab__content {
   max-height: 500px;
+  padding-bottom: 43px;
   height: auto;
 }
 .faq-section__accardion__tab input[type=checkbox]:checked + .faq-section__accardion__tab__label::after {
-  transform: rotate(360deg);
+  transform: rotate(270deg);
 }
 .faq-section__accardion__tab:not(:last-child) {
   border-bottom: 1px solid #D7E2E4;
@@ -429,20 +446,16 @@ button {
   position: relative;
 }
 .faq-section__accardion__tab__label::after {
-  content: url("../icons/chevron.svg");
+  content: "❯";
   text-align: center;
-  transform: rotate(180deg) translateY(50%);
-  transition: rotate 0.3s;
-  box-sizing: border-box;
-  position: absolute;
-  right: 0;
-  top: 50%;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+  font-size: 12px;
 }
 .faq-section__accardion__tab__content {
   max-height: 0px;
   height: 0px;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
   padding: 0px 0px 0px 21px;
   line-height: 25.6px;
   font-size: 16px;
@@ -491,17 +504,21 @@ button {
   display: flex;
   justify-content: space-between;
 }
-.footer__copyright-section .copyright {
+.footer__copyright-section .copyright-wrapper {
+  display: flex;
+  gap: 40px;
+}
+.footer__copyright-section .copyright-wrapper .copyright {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.5;
   color: #04111E;
 }
-.footer__copyright-section .links {
+.footer__copyright-section .copyright-wrapper .links {
   display: flex;
   gap: 40px;
 }
-.footer__copyright-section .links a {
+.footer__copyright-section .copyright-wrapper .links a {
   color: #04111E;
   opacity: 0.5;
 }
@@ -510,7 +527,7 @@ button {
   gap: 32px;
 }
 .footer__copyright-section .social-links a img {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 @media (max-width: 991.98px) {
@@ -519,6 +536,11 @@ button {
   }
   .preheader__text {
     font-size: 10px;
+  }
+}
+@media (min-width: 720px) and (max-width: 991.98px) {
+  .preheader {
+    display: none;
   }
 }
 @media (max-width: 991.98px) {
@@ -550,6 +572,8 @@ button {
     padding-top: 50px;
     position: unset;
     overflow: unset;
+    padding-bottom: 56px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
   .hero-section__offer {
     width: unset;
@@ -620,12 +644,38 @@ button {
     display: none;
   }
 }
-@media (min-width: 820px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 991.98px) {
+  .hero-section {
+    position: relative;
+    padding-top: unset;
+  }
+  .hero-section__offer {
+    margin-top: 49px;
+  }
+  .hero-section__offer__heading {
+    width: 50%;
+    font-size: 46px;
+  }
+  .hero-section__offer__text {
+    width: 50%;
+    margin-top: 16px;
+  }
+  .hero-section__offer .plumber-img.mobile {
+    display: none;
+  }
+  .hero-section__form {
+    position: absolute;
+    top: 23px;
+    width: 318px;
+    height: 342px;
+    transform: none;
+    padding: 24px 20px;
+  }
   .hero-section__services {
-    width: unset;
+    width: 100%;
+    margin-top: 66px;
     flex-wrap: nowrap;
-    margin: 29px auto;
-    gap: 60px;
+    justify-content: space-between;
   }
 }
 @media (max-width: 991.98px) {
@@ -679,17 +729,29 @@ button {
     font-size: 16px;
   }
 }
-@media (min-width: 820px) and (max-width: 991.98px) {
-  .recommendations__statistics {
-    align-items: center;
-    flex-direction: row;
+@media (min-width: 720px) and (max-width: 991.98px) {
+  .recommendations {
+    padding-top: 36px;
   }
-  .recommendations__statistics__customers {
-    margin-bottom: unset;
+  .recommendations__statistics {
+    flex-direction: row;
+    align-items: center;
   }
   .recommendations__reviews {
     flex-direction: row;
-    flex-wrap: wrap;
+  }
+  .recommendations__reviews .review {
+    gap: 10px;
+    flex: 1;
+  }
+  .recommendations__reviews .review__text {
+    width: unset;
+  }
+  .recommendations__form__header {
+    margin-bottom: 38px;
+  }
+  .recommendations__form__input {
+    flex-direction: row;
   }
 }
 @media (max-width: 991.98px) {
@@ -714,15 +776,26 @@ button {
   .about-us__lower-section__item {
     width: 168px;
     height: 168px;
+    flex: unset;
+    margin: unset;
   }
   .about-us__lower-section__item img {
     width: 100%;
     height: 100%;
   }
 }
-@media (min-width: 820px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 991.98px) {
+  .about-us {
+    padding-top: 46px;
+  }
+  .about-us__upper-section__text {
+    gap: 20px;
+  }
+  .about-us__upper-section__photo {
+    display: block;
+  }
   .about-us__lower-section {
-    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 }
 @media (max-width: 991.98px) {
@@ -746,13 +819,16 @@ button {
     align-items: center;
     margin-bottom: 24px;
   }
-  .faq-section__contact-us__wrapper .heading {
+  .faq-section__contact-us__wrapper .heading-wrapper {
+    flex: 2;
+  }
+  .faq-section__contact-us__wrapper .heading-wrapper .heading {
     font-size: 18px;
-    width: 217px;
     line-height: 25.2px;
     margin-bottom: unset;
   }
   .faq-section__contact-us__wrapper .submit {
+    flex: 1;
     width: 120px;
     font-size: 14px;
     margin-bottom: unset;
@@ -772,16 +848,26 @@ button {
     line-height: 19.2px;
   }
 }
-@media (min-width: 820px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 991.98px) {
   .faq-section__contact-us__wrapper {
-    margin-bottom: 20px;
-    align-items: center;
+    align-items: unset;
   }
-  .faq-section__contact-us__wrapper .heading {
-    flex: 1;
+  .faq-section__contact-us__wrapper .heading-wrapper {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-section__contact-us__wrapper .heading-wrapper .heading {
+    width: unset;
+  }
+  .faq-section__contact-us__wrapper .heading-wrapper .text {
+    display: block;
   }
   .faq-section__contact-us__wrapper .submit {
-    flex: 1;
+    flex: 1.5;
+  }
+  .faq-section__contact-us .text {
+    display: none;
   }
 }
 @media (max-width: 991.98px) {
@@ -828,14 +914,33 @@ button {
     gap: 16px;
     justify-content: unset;
   }
-  .footer__copyright-section .copyright {
+  .footer__copyright-section .copyright-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer__copyright-section .copyright-wrapper .copyright {
     font-size: 14px;
   }
-  .footer__copyright-section .links {
+  .footer__copyright-section .copyright-wrapper .links {
     font-size: 14px;
     gap: unset;
     width: 100%;
     justify-content: space-between;
+  }
+}
+@media (min-width: 720px) and (max-width: 991.98px) {
+  .footer__copyright-section {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer__copyright-section .copyright-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .footer__copyright-section .copyright-wrapper .links {
+    gap: 24px;
   }
 }
 @media (max-width: 991.98px) {

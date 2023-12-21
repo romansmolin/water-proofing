@@ -101,14 +101,9 @@ button {
     border-radius: 4px;
 
     img {
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 0;
-        transition: opacity $transition-delay, right $transition-delay;
-
+        margin-left: 6px;
     }
+
 
     @media (min-width: 992px) {
         &:hover {

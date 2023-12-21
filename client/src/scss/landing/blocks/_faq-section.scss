@@ -18,10 +18,13 @@
         &__wrapper {
             .heading {
                 font-weight: $font-weight-semibold;
-                font-size: 40px;
+                font-size: 28px;
                 color: $text-color;
-                line-height: 56px;
                 margin-bottom: 28px;
+            }
+
+            .text.tablet {
+                display: none;
             }
     
             .submit {
@@ -51,12 +54,13 @@
 
                 &:checked + label + .faq-section__accardion__tab__content {
                     max-height: 500px;
+                    padding-bottom: 43px;
                     height: auto;
                     
                 }
 
                 &:checked + .faq-section__accardion__tab__label::after {
-                    transform: rotate(360deg);
+                    transform: rotate(270deg);
                 }
             }
 
@@ -77,15 +81,11 @@
                 position: relative;
 
                 &::after {
-                    content: url('../icons/chevron.svg');
+                    content: '\276F';
                     text-align: center;
-                    transform: rotate(180deg) translateY(50%);
-                    transition: rotate 0.3s;
-                    box-sizing: border-box;
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    // transform: translateY(-50%);
+                    transform: rotate(90deg);
+                    transition: all 0.35s;
+                    font-size: 12px;
                 }
 
             }
@@ -94,7 +94,7 @@
                 max-height: 0px;
                 height: 0px;
                 overflow: hidden;
-                transition: max-height 0.3s ease-in-out;
+                // transition: max-height 0.3s ease-in-out;
                 padding: 0px 0px 0px 21px;
                 line-height: 25.6px;
                 font-size: $font-size-medium;
