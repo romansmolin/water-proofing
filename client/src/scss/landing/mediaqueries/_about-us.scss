@@ -39,19 +39,10 @@
     }
 }
 
-// @media (max-width: 991.98px) {
-//     .about-us {
-//         &__upper-section {
-//             &__photo {
-//                 width: 335px;
-//                 height: 100%;
-//             }
-//         }
-
-//         &__lower-section {
-//             flex-wrap: wrap;
-//             justify-content: center;
-//             gap: 59px;
-//         }
-//     }
-// }
+@media (min-width: 820px) and (max-width:991.98px) {
+    .about-us {
+        &__lower-section {
+            justify-content: space-between;
+        }
+    }
+}

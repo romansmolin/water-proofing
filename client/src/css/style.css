@@ -720,6 +720,11 @@ button {
     height: 100%;
   }
 }
+@media (min-width: 820px) and (max-width: 991.98px) {
+  .about-us__lower-section {
+    justify-content: space-between;
+  }
+}
 @media (max-width: 991.98px) {
   .faq-section {
     padding-top: 20px;
