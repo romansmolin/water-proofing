@@ -709,7 +709,7 @@ button {
   .about-us__lower-section {
     flex-wrap: wrap;
     gap: 22px;
-    justify-content: unset;
+    justify-content: center;
   }
   .about-us__lower-section__item {
     width: 168px;
