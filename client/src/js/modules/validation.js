@@ -49,7 +49,7 @@ async function submitZipCode(errorId, inputId) {
     const errorSpan = document.getElementById(errorId)
 
     if (dzipResponse.status === "ZERO_RESULTS") {
-        errorSpan.textContent = 'Please enter existing zip cd'
+        errorSpan.textContent = 'Please enter existing zip code'
         setValidationIcon(inputId, false)
     } 
 

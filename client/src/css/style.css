@@ -52,7 +52,7 @@ button {
 .form-input {
   width: 100%;
   border: 0.1px solid #afc1c9;
-  height: 50px;
+  height: 54px;
   padding-left: 16px;
   font-size: 20px;
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -104,7 +104,7 @@ button {
   font-weight: 700;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #ffffff;
-  height: 52px;
+  height: 54px;
   cursor: pointer;
   position: relative;
   transition: background-color 0.3s;
@@ -341,6 +341,9 @@ button {
 }
 .recommendations__form__input .input-wrapper, .recommendations__form__input .submit {
   flex: 1;
+}
+.recommendations__form__input .form-input, .recommendations__form__input .submit {
+  height: 60px;
 }
 
 .about-us {

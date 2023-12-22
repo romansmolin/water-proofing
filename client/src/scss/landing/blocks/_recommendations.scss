@@ -84,6 +84,10 @@
             .input-wrapper, .submit {
                 flex: 1;
             }
+
+            .form-input, .submit {
+                height: 60px;
+            }
         }
     }
 }
