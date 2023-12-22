@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -441,7 +440,7 @@ button {
   height: auto;
 }
 .faq-section__accardion__tab input[type=checkbox]:checked + .faq-section__accardion__tab__label::after {
-  transform: rotate(270deg);
+  transform: rotate(360deg);
 }
 .faq-section__accardion__tab:not(:last-child) {
   border-bottom: 1px solid #D7E2E4;
@@ -458,9 +457,9 @@ button {
   position: relative;
 }
 .faq-section__accardion__tab__label::after {
-  content: "❯";
+  content: url("../icons/chevron.svg");
   text-align: center;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
   transition: all 0.35s;
   font-size: 12px;
   width: 15px;
@@ -474,7 +473,7 @@ button {
   font-size: 16px;
   font-weight: 400;
   color: #04111E;
-  width: 701px;
+  max-width: 701px;
 }
 
 .footer {
