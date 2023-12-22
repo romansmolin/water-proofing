@@ -617,10 +617,11 @@ button {
   }
   .hero-section__form {
     height: unset;
-    width: unset;
     position: unset;
     transform: none;
-    padding: 39px 0px;
+    width: calc(100% + 32px);
+    margin: 0px 16px 0px -16px;
+    padding: 30px 17px;
   }
   .hero-section__form__heading {
     font-size: 20px;
