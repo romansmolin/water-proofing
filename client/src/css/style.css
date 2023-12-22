@@ -65,24 +65,37 @@ button {
   text-align: right;
   color: #E22135;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   height: 15px;
 }
 .form-input::-moz-placeholder {
   opacity: 0.5;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   color: #04111E;
 }
 .form-input::placeholder {
   opacity: 0.5;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   color: #04111E;
 }
 .form-input:focus-visible {
   border: 1px solid #5e696e;
   outline: 0;
+}
+
+#dzip-error-second {
+  text-align: left;
+  color: #E22135;
+  font-weight: 700;
+  font-size: 14px;
+  height: 15px;
+}
+
+.form-input + .input-icon.dzip-second {
+  top: 40%;
+  transform: translateY(-50%);
 }
 
 .submit {
@@ -105,7 +118,7 @@ button {
 }
 @media (min-width: 992px) {
   .submit:hover {
-    background-color: #881521;
+    background-color: #CF1528;
   }
   .submit:hover img {
     opacity: 1;
@@ -203,7 +216,7 @@ button {
   margin-bottom: 30px;
 }
 .hero-section__form .input-wrapper {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 .hero-section__form .submit {
   margin-bottom: 15px;
@@ -327,9 +340,8 @@ button {
   display: flex;
   gap: 18px;
 }
-.recommendations__form__input .form-input, .recommendations__form__input .submit {
+.recommendations__form__input .input-wrapper, .recommendations__form__input .submit {
   flex: 1;
-  height: 60px;
 }
 
 .about-us {
@@ -531,7 +543,7 @@ button {
   opacity: 0.2;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
   .container {
     width: 100%;
   }
@@ -539,12 +551,12 @@ button {
     font-size: 10px;
   }
 }
-@media (min-width: 720px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 1100.98px) {
   .preheader {
     display: none;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
   .header {
     padding-top: 16px;
   }
@@ -565,7 +577,7 @@ button {
     font-size: 18px;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
   .hero-section {
     display: flex;
     flex-direction: column;
@@ -574,7 +586,7 @@ button {
     position: unset;
     overflow: unset;
     padding-bottom: 56px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #D7E2E4;
   }
   .hero-section__offer {
     width: unset;
@@ -645,7 +657,7 @@ button {
     display: none;
   }
 }
-@media (min-width: 720px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 1100.98px) {
   .hero-section {
     position: relative;
     padding-top: unset;
@@ -679,7 +691,12 @@ button {
     justify-content: space-between;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 719px) {
+  .recommendations__form__input .submit {
+    flex: unset;
+  }
+}
+@media (max-width: 1100.98px) {
   .recommendations {
     padding-top: 39px;
   }
@@ -723,14 +740,13 @@ button {
     flex-direction: column;
   }
   .recommendations__form__input .form-input, .recommendations__form__input .submit {
-    flex: unset;
     height: 54px;
   }
   .recommendations__form__input .submit {
     font-size: 16px;
   }
 }
-@media (min-width: 720px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 1100.97px) {
   .recommendations {
     padding-top: 36px;
   }
@@ -755,9 +771,9 @@ button {
     flex-direction: row;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
   .about-us {
-    padding-top: 66px;
+    padding-top: 36px;
     gap: 29px;
   }
   .about-us__upper-section__text h2 {
@@ -785,7 +801,7 @@ button {
     height: 100%;
   }
 }
-@media (min-width: 720px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 1100.98px) {
   .about-us {
     padding-top: 46px;
   }
@@ -799,9 +815,9 @@ button {
     flex-wrap: nowrap;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
   .faq-section {
-    padding-top: 20px;
+    padding-top: 36px;
     padding-bottom: 20px;
     flex-direction: column;
     gap: 30px;
@@ -849,7 +865,7 @@ button {
     line-height: 19.2px;
   }
 }
-@media (min-width: 720px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 1100.98px) {
   .faq-section__contact-us__wrapper {
     align-items: unset;
   }
@@ -871,7 +887,7 @@ button {
     display: none;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
   .footer {
     padding-top: 36px;
   }
@@ -930,7 +946,7 @@ button {
     justify-content: space-between;
   }
 }
-@media (min-width: 720px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 1100.98px) {
   .footer__copyright-section {
     justify-content: space-between;
     flex-direction: row;
@@ -944,7 +960,7 @@ button {
     gap: 24px;
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
   .container {
     padding: 0px 16px;
   }

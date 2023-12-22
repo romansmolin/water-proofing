@@ -81,9 +81,8 @@
             display: flex;
             gap: 18px;
 
-            .form-input, .submit {
+            .input-wrapper, .submit {
                 flex: 1;
-                height: 60px;
             }
         }
     }

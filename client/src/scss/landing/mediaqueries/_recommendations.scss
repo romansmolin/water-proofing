@@ -1,6 +1,17 @@
+@media (max-width: 719px) {
+    .recommendations {
+        &__form {
+            &__input {
+                .submit {
+                    flex: unset;
+                }
+            }
+        }
+    }
+}
 
 
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
     .recommendations {
         padding-top: 39px;
 
@@ -54,7 +65,7 @@
                 flex-direction: column;
 
                 .form-input, .submit {
-                    flex: unset;
+                    // flex: unset;
                     height: 54px;
                 }
 
@@ -66,25 +77,7 @@
     }
 }
 
-// @media (min-width: 620px) and (max-width:991.98px) {
-//     .recommendations {
-//         &__statistics {
-//             align-items: center;
-//             flex-direction: row;
-
-//             &__customers {
-//                 margin-bottom: unset;
-//             }
-//         }
-
-//         &__reviews {
-//             flex-direction: row;
-//             flex-wrap: wrap;
-//         }
-//     }
-// }
-
-@media (min-width: 720px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 1100.97px) {
     .recommendations {
         padding-top: 36px;
 

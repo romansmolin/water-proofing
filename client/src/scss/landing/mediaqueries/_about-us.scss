@@ -1,6 +1,6 @@
-@media (max-width: 991.98px) {
+@media (max-width: 1100.98px) {
     .about-us {
-        padding-top: 66px;
+        padding-top: 36px;
         gap: 29px;
 
         &__upper-section {
@@ -41,15 +41,7 @@
     }
 }
 
-// @media (min-width: 620px) and (max-width:991.98px) {
-//     .about-us {
-//         &__lower-section {
-//             // justify-content: space-between;
-//         }
-//     }
-// }
-
-@media (min-width: 720px) and (max-width: 991.98px) {
+@media (min-width: 720px) and (max-width: 1100.98px) {
     .about-us {
         padding-top: 46px;
 

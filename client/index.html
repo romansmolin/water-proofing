@@ -53,13 +53,15 @@
                             type="text"
                             id="dzip"
                             placeholder="Enter Your Zip Code"
+                            onblur="validateZipCode(this, 'dzip-error', updateFormData)"
                         >
-                        <div class="inpput-con dzip"></div>
-                        <span class="form-input__error"></span>
+                        <div class="input-icon dzip"></div>
+                        <span class="form-input__error" id="dzip-error"></span>
                     </div>
                     <button
                         type="button" 
                         class="submit"
+                        onclick="submitZipCode('dzip-error', 'dzip')"
                     >
                         Get Estimates
                     </button>
@@ -148,15 +150,21 @@
                     <p class="recommendations__form__subtitle">get a quote in just under 2 minutes</p>
                     <h2 class="recommendations__form__header">Enter your Zip Code for a free estimate!</h2>
                     <div class="recommendations__form__input">
-                        <input
-                            class="form-input" 
-                            type="text"
-                            id="dzip"
-                            placeholder="Enter Your Zip Code"
-                        >
+                        <div class="input-wrapper">
+                            <input
+                                class="form-input" 
+                                type="text"
+                                id="dzip-second"
+                                placeholder="Enter Your Zip Code"
+                                onblur="validateZipCode(this, 'dzip-error-second', updateFormData)"
+                            >
+                            <div class="input-icon dzip-second"></div>
+                            <div id="dzip-error-second"></div>   
+                        </div>
                         <button 
                             type="button"
                             class="submit"
+                            onclick="submitZipCode('dzip-error-second', 'dzip-second')"
                         >
                             Get Estimates
                             <img src="src/icons/arrow.svg" alt="Button Icon">
@@ -295,6 +303,10 @@
         </div>
     </footer>
 
-    <script src="src/js/ui.js"></script>
+    <script src="src/js/modules/ui.js"></script>
+    <script src="src/js/modules/formData.js"></script>
+    <script src="src/js/modules/utils.js"></script>
+    <script src="src/js/modules/api.js"></script>
+    <script src="src/js/modules/validation.js"></script>
 </body>
 </html>
